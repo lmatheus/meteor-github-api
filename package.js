@@ -1,9 +1,9 @@
 Package.describe({
   summary: 'NodeJS wrapper for the GitHub API',
-  version: "0.1.11"
+  version: "0.2.2"
 });
 
-Npm.depends({github: '0.1.10'});
+Npm.depends({github: '0.2.2'});
 
 Package.on_use(function (api) {
   api.versionsFrom("METEOR-CORE@0.9.0-atm");
