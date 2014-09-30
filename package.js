@@ -2,7 +2,7 @@ Package.describe({
   git: "https://github.com/bruz/meteor-github-api.git",
   name: "bruz:github-api",
   summary: 'NodeJS wrapper for the GitHub API',
-  version: "0.2.2"
+  version: "0.2.2_1"
 });
 
 Npm.depends({github: '0.2.2'});
