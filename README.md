@@ -9,8 +9,6 @@ You can use it in exactly the same way you would use the original package
 (example adapted from its GitHub page):
 
 ```javascript
-var GitHub = Npm.require("github-api");
-
 var github = new GitHub({
     version: "3.0.0", // required
     timeout: 5000     // optional
