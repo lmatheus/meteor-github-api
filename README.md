@@ -9,8 +9,6 @@ You can use it in exactly the same way you would use the original package
 (example adapted from its GitHub page):
 
 ```javascript
-var GitHub = require("github");
-
 var github = new GitHub({
     version: "3.0.0", // required
     timeout: 5000     // optional
@@ -35,7 +33,10 @@ console.log(JSON.stringify(result));
 ```
 
 ## How to Get It
-You can install this package through Atmosphere using
+
+You can install this package running `meteor add bruz:github-api`.
+
+For versions prior to 0.9, you can install the package through Atmosphere using
 [meteorite](https://github.com/oortcloud/meteorite) by running `mrt add github`.
 
 ## Feedback
