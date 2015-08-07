@@ -9,10 +9,9 @@ var Future = Npm.require("fibers/future");
  * and, optionally, a timeout for calls to the GitHub API.
  */
 GitHub = function(config) {
-  var wrap, target,
+  var wrap,
       Module = Npm.require("github"),
-      interface = new Module(config),
-      rx = /[1-3]\.0\.0/;
+      interface = new Module(config);
 
   /**
    * Wraps an asynchronous function in a future, making it synchronous.
@@ -52,15 +51,6 @@ GitHub = function(config) {
       return future.wait();
     };
   };
-
-  // Get a list of the modules that contain functions we need to modify.
-  // interface['3.0.0'].routes (subbing in a different API version as necessary)
-  // will give us the names of all these modules.
-  //
-  // TODO: Can we make this less janky/fragile?
-  target = _.filter(interface, function(val, name) {
-    return rx.test(name);
-  })[0].routes;
 
   // Iterate over all modules and shim each method to be synchronous. Guard
   // against iterating over non-objects and against modifying non-functions.
