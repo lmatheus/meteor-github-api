@@ -1,14 +1,14 @@
 Package.describe({
-  git: "https://github.com/bruz/meteor-github-api.git",
-  name: "bruz:github-api",
+  git: "https://github.com/lmatheus/meteor-github-api.git",
+  name: "lmatheus:github-api",
   summary: 'NodeJS wrapper for the GitHub API',
-  version: "0.2.4_1"
+  version: "2.4.0"
 });
 
-Npm.depends({github: '0.2.4'});
+Npm.depends({github: '2.4.0'});
 
 Package.on_use(function (api) {
-  api.versionsFrom("METEOR-CORE@0.9.0-atm");
+  api.versionsFrom("1.4.0.1");
   api.use(['underscore'], ['client', 'server']);
   api.export('GitHub');
 
