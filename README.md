@@ -34,13 +34,4 @@ console.log(JSON.stringify(result));
 
 ## How to Get It
 
-You can install this package running `meteor add bruz:github-api`.
-
-For versions prior to 0.9, you can install the package through Atmosphere using
-[meteorite](https://github.com/oortcloud/meteorite) by running `mrt add github`.
-
-## Feedback
-This is my first Meteor package; while there's not much to it, but I'm sure
-there's room for improvement. If you like it and want to help make it better,
-file an [issue](https://github.com/ndhoule/meteor-github/issues), submit a pull
-request, or drop me an [email](nathan@nathanhoule.com). Thanks!
+You can install this package running `meteor add lmatheus:github-api`.
