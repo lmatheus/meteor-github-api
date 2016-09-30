@@ -8,7 +8,7 @@ var Future = Npm.require("fibers/future");
  * @param {Object} An object containing the target version of the GitHub API
  * and, optionally, a timeout for calls to the GitHub API.
  */
-GitHub = function(config) {
+var GitHub = function(config) {
   var wrap,
       Module = Npm.require("github"),
       interface = new Module(config);
